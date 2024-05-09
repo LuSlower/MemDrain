@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1715230720 source:e:\documentos\codeblocks\memdrain\memdrain.cpp
+	"HelpMem.h"
+
+1715206195 source:e:\documentos\codeblocks\memdrain\memdrain.rc
+	<windows.h>
+
+1715230367 e:\documentos\codeblocks\memdrain\helpmem.h
+	<windows.h>
+	<stdio.h>
+	<stdlib.h>
+	<cstdlib>
+	<psapi.h>
+	<tlhelp32.h>
+	<winternl.h>
+
