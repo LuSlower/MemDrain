@@ -4,6 +4,7 @@
 pequeña CLI para drenar memoria de diferentes listas y conjuntos
 
 > [!IMPORTANTE]
+> 
 > No estoy a favor ni en contra de los "optimizadores de memoria", esto solo se hizo con fines de aprendizaje
 
 Uselo y disfrutelo, si desea desanimarse puede leer [este artículo](https://www.itprotoday.com/cloud-computing/memory-optimization-hoax)
