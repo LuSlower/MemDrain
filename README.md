@@ -4,13 +4,13 @@
 ```
 uso: md.exe <Argument> <Parameter>
 
-  -ws <IM> <-r>           | Drain WorkingSet
-  -sws                    | Drain SystemWorkingSet
-  -mpl                    | Drain ModifiedPageList
-  -mcl                    | Drain CombineMemoryList
-  -sl <0>                 | Drain StanbyList (and low priority)
-  -rh                     | Drain Registry Hives
-  -all                    | Drain All
+  -ws <IM> <-r>   |   Drain WorkingSet
+  -sws            |   Drain SystemWorkingSet
+  -mpl            |   Drain ModifiedPageList
+  -mcl            |   Drain CombineMemoryList
+  -sl <0>         |   Drain StanbyList (and low priority)
+  -rh             |   Drain Registry Hives
+  -all            |   Drain All
 ```
 
 pequeña CLI para drenar memoria de diferentes listas y conjuntos
