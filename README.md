@@ -1,5 +1,17 @@
 # MemDrain
-[![Total Downloads](https://img.shields.io/github/downloads/LuSlower/MemDrain/total.svg)](https://github.com/LuSlower/MemDrain/releases) [![PayPal Badge](https://img.shields.io/badge/PayPal-003087?logo=paypal&logoColor=fff&style=flat)](https://paypal.me/eldontweaks) 
+[![Total Downloads](https://img.shields.io/github/downloads/LuSlower/MemDrain/total.svg)](https://github.com/LuSlower/MemDrain/releases) [![PayPal Badge](https://img.shields.io/badge/PayPal-003087?logo=paypal&logoColor=fff&style=flat)](https://paypal.me/eldontweaks)
+
+```
+uso: md.exe <Argument> <Parameter>
+
+  -ws <IM> <-r>           | Drain WorkingSet
+  -sws                    | Drain SystemWorkingSet
+  -mpl                    | Drain ModifiedPageList
+  -mcl                    | Drain CombineMemoryList
+  -sl <0>                 | Drain StanbyList (and low priority)
+  -rh                     | Drain Registry Hives
+  -all                    | Drain All
+```
 
 pequeña CLI para drenar memoria de diferentes listas y conjuntos
 > [!IMPORTANT]
