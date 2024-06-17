@@ -19,6 +19,3 @@ pequeña CLI para drenar memoria de diferentes listas y conjuntos
  así que uselo y disfrutelo
 > 
 > si desea ver realmente lo que provoca drenar working-set sin conocimiento alguno puede leer [este artículo](https://www.itprotoday.com/cloud-computing/memory-optimization-hoax)
-
-## DERECHOS DE AUTOR Y LICENCIA
-[LICENCIA](LICENSE)
