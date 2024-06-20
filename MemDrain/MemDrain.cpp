@@ -1,4 +1,4 @@
-#include "HelpMem.h"
+#include "MemDrain.h"
 
 // Definir una estructura para asociar opciones con funciones
 typedef struct {
@@ -8,14 +8,14 @@ typedef struct {
 
 // Funciones para cada accion
 void help_action(int argc, char* argv[]) {
-    printf("uso: md.exe <Argument> <Parameter>\n");
-    printf("\n  -ws <IM> <-r>           | Drain WorkingSet");
-    printf("\n  -sws                    | Drain SystemWorkingSet");
-    printf("\n  -mpl                    | Drain ModifiedPageList");
-    printf("\n  -mcl                    | Drain CombineMemoryList");
-    printf("\n  -sl <0>                 | Drain StanbyList (and low priority)");
-    printf("\n  -rh                     | Drain Registry Hives");
-    printf("\n  -all                    | Drain All");
+    printf("use: md.exe <Argument> <Parameter>\n");
+    printf("\n  -ws <IM> <-r>   |   Drain WorkingSet");
+    printf("\n  -sws            |   Drain SystemWorkingSet");
+    printf("\n  -mpl            |   Drain ModifiedPageList");
+    printf("\n  -mcl            |   Drain CombineMemoryList");
+    printf("\n  -sl <0>         |   Drain StanbyList (and low priority)");
+    printf("\n  -rh             |   Drain Registry Hives");
+    printf("\n  -all            |   Drain All");
 
 }
 void working_set_action(int argc, char* argv[]){
@@ -168,6 +168,9 @@ void all_action(int argc, char* argv[]){
     SYSTEM_MEMORY_LIST_COMMAND sl0;
     sl0 = MemoryPurgeLowPriorityStandbyList;
     NtSetSystemInformation(SystemMemoryListInformation, &sl0, sizeof(sl0));
+
+    // Vaciar colmenas (hives) de registro
+    NtSetSystemInformation (SystemRegistryReconciliationInformation, NULL, 0);
 
     printf("Sucess");
     return;
