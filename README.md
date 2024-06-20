@@ -2,7 +2,7 @@
 [![Total Downloads](https://img.shields.io/github/downloads/LuSlower/MemDrain/total.svg)](https://github.com/LuSlower/MemDrain/releases) [![PayPal Badge](https://img.shields.io/badge/PayPal-003087?logo=paypal&logoColor=fff&style=flat)](https://paypal.me/eldontweaks)
 
 ```
-uso: md.exe <Argument> <Parameter>
+use: md.exe <Argument> <Parameter>
 
   -ws <IM> <-r>   |   Drain WorkingSet
   -sws            |   Drain SystemWorkingSet
