@@ -14,7 +14,7 @@ use: md.exe <Argument> <Parameter>
 ```
 
 pequeña CLI para drenar memoria de diferentes listas y conjuntos
-> [!IMPORTANT]
+> [!CAUTION]
 > No estoy a favor ni en contra de los "optimizadores de memoria", esto solo se hizo con fines de aprendizaje
  así que uselo y disfrutelo
 > 
