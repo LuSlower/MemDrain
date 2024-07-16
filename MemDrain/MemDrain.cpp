@@ -157,7 +157,7 @@ void all_action(int argc, char* argv[]){
     mcl.Handle = NULL;
     mcl.Flags = 0;
     mcl.PagesCombined = 0;
-    NtSetSystemInformation (SystemCombinePhysicalMemoryInformation, &mcl, sizeof(mcl));
+    NtSetSystemInformation(SystemCombinePhysicalMemoryInformation, &mcl, sizeof(mcl));
 
     // Liberar lista de espera
     SYSTEM_MEMORY_LIST_COMMAND sl;
@@ -170,7 +170,7 @@ void all_action(int argc, char* argv[]){
     NtSetSystemInformation(SystemMemoryListInformation, &sl0, sizeof(sl0));
 
     // Vaciar colmenas (hives) de registro
-    NtSetSystemInformation (SystemRegistryReconciliationInformation, NULL, 0);
+    NtSetSystemInformation(SystemRegistryReconciliationInformation, NULL, 0);
 
     printf("Sucess");
     return;
@@ -204,7 +204,7 @@ int main(int argc, char* argv[]) {
             return 0;
         }
     }
-    // Si la opción no coincide con ninguna acción conocida, mostrar ayuda
+    // Si la opciÃ³n no coincide con ninguna acciÃ³n conocida, mostrar ayuda
     help_action(argc, argv);
     return 0;
 }
