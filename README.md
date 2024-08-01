@@ -13,8 +13,8 @@ use: md.exe <Argument> <Parameter>
   -all            |   Drain All
 ```
 
-pequeña CLI para drenar memoria de diferentes listas y conjuntos
+small CLI to drain memory from different lists and sets
 > [!CAUTION]
-> No estoy a favor ni en contra de los "optimizadores de memoria", esto solo se hizo con fines de aprendizaje así que úselo y disfrútelo
+> I am neither for nor against "memory optimizers", this was only made for learning purposes so use it and enjoy it
 > 
-> Si desea ver realmente lo que provoca sin conocimiento alguno, puede leer [este artículo](https://www.itprotoday.com/cloud-computing/memory-optimization-hoax)
+> If you want to really see what it does without any knowledge, you can read [este artículo](https://www.itprotoday.com/cloud-computing/memory-optimization-hoax)
