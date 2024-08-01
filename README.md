@@ -17,4 +17,4 @@ small CLI to drain memory from different lists and sets
 > [!CAUTION]
 > I am neither for nor against "memory optimizers", this was only made for learning purposes so use it and enjoy it
 > 
-> If you want to really see what it does without any knowledge, you can read [este artículo](https://www.itprotoday.com/cloud-computing/memory-optimization-hoax)
+> If you want to really see what it does without any knowledge, you can read [this article](https://www.itprotoday.com/cloud-computing/memory-optimization-hoax)
