@@ -36,7 +36,7 @@ typedef enum _SYSTEM_MEMORY_LIST_COMMAND {
 } SYSTEM_MEMORY_LIST_COMMAND;
 
 
-// definicion de SYSTEM_INFORMATION_CLASS
+
 typedef enum _SYSTEM_INFORMATION_CLASS_MOD {
     SystemCombinePhysicalMemoryInformation = 130,
     SystemFileCacheInformationEx = 81,
@@ -46,7 +46,7 @@ typedef enum _SYSTEM_INFORMATION_CLASS_MOD {
 
 extern "C"{
 typedef NTSTATUS LONG;
-// Definir funciones internas
+
 NTSYSAPI
 NTSTATUS
 NTAPI
@@ -75,7 +75,7 @@ DWORD GetChildProcesses(DWORD ParentPID, DWORD* ChildPIDs) {
                 if (NumProcesses < 64) {
                     ChildPIDs[NumProcesses++] = pe32.th32ProcessID;
                 } else {
-                    printf("Se alcanzó el límite máximo de procesos hijos");
+                    printf("Se alcanzÃ³ el lÃ­mite mÃ¡ximo de procesos hijos");
                     break;
                 }
             }
@@ -125,7 +125,7 @@ bool EnablePrivilege(DWORD processId, LPCSTR privilegeName, HANDLE hProcess = NU
 
     if (!hProcess) {
         hProcess = OpenProcess(PROCESS_ALL_ACCESS, FALSE, processId);
-        // comprobar por ultima vez
+        
         if (!hProcess){
         printf("Error al abrir el token del proceso");
         return false;
@@ -150,4 +150,5 @@ bool EnablePrivilege(DWORD processId, LPCSTR privilegeName, HANDLE hProcess = NU
     CloseHandle(hProcess);
     return true;
 }
+
 
